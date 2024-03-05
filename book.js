@@ -13,11 +13,13 @@ module.exports = {
         "code",
         "back-to-top-button",
         "expandable-chapters",
-        "prism",
+        // "prism",
         "-highlight",
         "tbfed-pagefooter",
         "-sharing",
-        "search-pro-fixed"
+        "search-pro-fixed",
+        "auto-scroll-table",
+        "lightbox"
     ],
 
     // 插件全局配置

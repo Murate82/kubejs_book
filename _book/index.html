@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>Introduction · Kubejs 6使用教程(1.20.1+)</title>
+        <title>前言 · Kubejs 6使用教程(1.20.1+)</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -29,15 +29,19 @@
                 
             
                 
-                <link rel="stylesheet" href="gitbook/gitbook-plugin-prism/prism-coy.css">
-                
-            
-                
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-tbfed-pagefooter/footer.css">
                 
             
                 
                 <link rel="stylesheet" href="gitbook/gitbook-plugin-search-pro-fixed/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-lightbox/css/lightbox.min.css">
                 
             
                 
@@ -64,6 +68,8 @@
     <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
     <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
 
+    
+    <link rel="next" href="KubeJS/Kubejs的使用.html" />
     
     
 
@@ -98,11 +104,120 @@
                 <a href="./">
             
                     
-                    Introduction
+                    前言
             
                 </a>
             
 
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="KubeJS/Kubejs的使用.html">
+            
+                <a href="KubeJS/Kubejs的使用.html">
+            
+                    
+                    一、KubeJS的使用
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="Kubejs的指令.md">
+            
+                <span>
+            
+                    
+                    1、KubeJS的指令
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="Kubejs的事件列表.md">
+            
+                <span>
+            
+                    
+                    2、KubeJS的事件列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="KubeJS/KubeJS的拓展.html">
+            
+                <a href="KubeJS/KubeJS的拓展.html">
+            
+                    
+                    二、KubeJS的拓展
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="格雷/格雷.html">
+            
+                <a href="格雷/格雷.html">
+            
+                    
+                    1、[GTM]格雷科技现代版GregTechCEu Modern
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1.1" data-path="格雷/格雷_材料创建.html">
+            
+                <a href="格雷/格雷_材料创建.html">
+            
+                    
+                    1.1、材料创建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.1.2" data-path="格雷/格雷_自定义机器.html">
+            
+                <a href="格雷/格雷_自定义机器.html">
+            
+                    
+                    1.x、自定义多方快机器
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
             
         </li>
     
@@ -136,7 +251,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href="." >Introduction</a>
+        <a href="." >前言</a>
     </h1>
 </div>
 
@@ -151,22 +266,11 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <h1 id="kubejs-6-&#x4F7F;&#x7528;&#x6559;&#x7A0B;">KubeJs 6 &#x4F7F;&#x7528;&#x6559;&#x7A0B;</h1>
-<h2 id="&#x4E00;&#x3001;&#x683C;&#x96F7;">&#x4E00;&#x3001;&#x683C;&#x96F7;</h2>
-<h3 id="&#x81EA;&#x5B9A;&#x4E49;&#x591A;&#x65B9;&#x5FEB;&#x673A;&#x5668;">&#x81EA;&#x5B9A;&#x4E49;&#x591A;&#x65B9;&#x5FEB;&#x673A;&#x5668;</h3>
-<pre class="language-"><code class="lang-js">GTCEuStartupEvents<span class="token punctuation">.</span><span class="token function">registry</span><span class="token punctuation">(</span><span class="token string">&apos;gtceu:recipe_type&apos;</span><span class="token punctuation">,</span> <span class="token parameter">event</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span><span class="token comment">//&#x6CE8;&#x518C;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x591A;&#x65B9;&#x5FEB;&#x63A7;&#x5236;&#x5668;</span>
-  event<span class="token punctuation">.</span><span class="token function">create</span><span class="token punctuation">(</span><span class="token string">&apos;greenhouse&apos;</span><span class="token punctuation">)</span><span class="token comment">//&#x8BBE;&#x7F6E;&#x673A;&#x5668;&#x7684;&#x540D;&#x5B57;</span>
-    <span class="token punctuation">.</span><span class="token function">category</span><span class="token punctuation">(</span><span class="token string">&apos;drack&apos;</span><span class="token punctuation">)</span>
-    <span class="token punctuation">.</span><span class="token function">setEUIO</span><span class="token punctuation">(</span><span class="token string">&apos;in&apos;</span><span class="token punctuation">)</span> <span class="token comment">//&#x8BBE;&#x7F6E;&#x673A;&#x5668;&#x7684;&#x80FD;&#x6E90;&#x8F93;&#x5165;/&#x8F93;&#x51FA;</span>
-    <span class="token punctuation">.</span><span class="token function">setMaxIOSize</span><span class="token punctuation">(</span><span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token comment">//&#x8BBE;&#x7F6E;&#x673A;&#x5668;&#x8F93;&#x5165;&#x8F93;&#x51FA;&#x4E2A;&#x6570;(&#x7269;&#x54C1;&#x8F93;&#x5165;,&#x7269;&#x54C1;&#x8F93;&#x51FA;,&#x6D41;&#x4F53;&#x8F93;&#x5165;,&#x6D41;&#x4F53;&#x8F93;&#x51FA;)</span>
-    <span class="token punctuation">.</span><span class="token function">setProgressBar</span><span class="token punctuation">(</span>GuiTextures<span class="token punctuation">.</span><span class="token constant">PROGRESS_BAR_ARROW</span><span class="token punctuation">,</span> FillDirection<span class="token punctuation">.</span><span class="token constant">LEFT_TO_RIGHT</span><span class="token punctuation">)</span><span class="token comment">//&#x8BBE;&#x7F6E;&#x673A;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#x5904;&#x7406;&#x4E2D;&#x7684;&#x6837;&#x5B50;</span>
-    <span class="token punctuation">.</span><span class="token function">setSound</span><span class="token punctuation">(</span>GTSoundEntries<span class="token punctuation">.</span><span class="token constant">BATH</span><span class="token punctuation">)</span><span class="token comment">//&#x8BBE;&#x7F6E;&#x673A;&#x5668;&#x8FD0;&#x884C;&#x65F6;&#x5DE5;&#x4F5C;&#x7684;&#x58F0;&#x97F3;</span>
-<span class="token punctuation">}</span><span class="token punctuation">)</span>
-</code></pre>
-<p>setProgressBar(GuiTextures.xxx ,FillDirection.xxx)</p>
-<p>setSound(GTSoundEntries.xxx)</p>
+                                <h1 id="kubejs-6-&#x4F7F;&#x7528;&#x6559;&#x7A0B;">KubeJS 6 &#x4F7F;&#x7528;&#x6559;&#x7A0B;</h1>
+<h3 id="&#x6B64;&#x6587;&#x7AE0;&#x662F;&#x4E3A;&#x4E86;&#x7ED9;&#x9B54;&#x6539;&#x73A9;&#x5BB6;&#x66F4;&#x597D;&#x7684;&#x4F7F;&#x7528;kubejs">&#x6B64;&#x6587;&#x7AE0;&#x662F;&#x4E3A;&#x4E86;&#x7ED9;&#x9B54;&#x6539;&#x73A9;&#x5BB6;&#x66F4;&#x597D;&#x7684;&#x4F7F;&#x7528;KubeJS</h3>
+<p>KubeJS&#x53EF;&#x4EE5;&#x8BA9;&#x4F60;&#x7528;JavaScript&#x8BED;&#x8A00;&#x521B;&#x5EFA;&#x811A;&#x672C;&#x6765;&#x7BA1;&#x7406;&#x4F60;&#x7684;&#x670D;&#x52A1;&#x5668;&#xFF0C;&#x6DFB;&#x52A0;&#x65B0;&#x7684;&#x5757;&#x548C;&#x9879;&#x76EE;&#xFF0C;&#x6539;&#x53D8;&#x914D;&#x65B9;&#xFF0C;&#x6DFB;&#x52A0;&#x81EA;&#x5B9A;&#x4E49;&#x5904;&#x7406;&#x7A0B;&#x5E8F;&#x7684;&#x4EFB;&#x52A1;mod&#x548C;&#x66F4;&#x591A;&#x3002;</p>
 <footer class="page-footer"><span class="copyright">powered by Gitbook</span><span class="footer-modification">&#x6587;&#x7AE0;&#x4FEE;&#x6539;&#x65F6;&#x95F4;&#xFF1A;
-2024-03-01 01:31:10
+2024-03-01 17:25:01
 </span></footer>
                                 
                                 </section>
@@ -195,6 +299,10 @@
             
                 
                 
+                <a href="KubeJS/Kubejs的使用.html" class="navigation navigation-next navigation-unique" aria-label="Next page: 一、KubeJS的使用">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
             
         
     </div>
@@ -202,7 +310,7 @@
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"Introduction","level":"1.1","depth":1,"dir":"ltr"},"config":{"plugins":["-lunr","-search","code","back-to-top-button","expandable-chapters","prism","-highlight","tbfed-pagefooter","-sharing","search-pro-fixed"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"prism":{"css":["prismjs/themes/prism-coy.css"]},"tbfed-pagefooter":{"modify_label":"文章修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"code":{"copyButtons":true},"back-to-top-button":{},"expandable-chapters":{},"search-pro-fixed":{},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"Murate","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kubejs 6使用教程(1.20.1+)","gitbook":"*","description":"Kubejs6的使用"},"file":{"path":"README.md","mtime":"2024-02-29T17:31:10.112Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-01T02:10:44.973Z"},"basePath":".","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"前言","level":"1.1","depth":1,"next":{"title":"一、KubeJS的使用","level":"1.2","depth":1,"path":"KubeJS/Kubejs的使用.md","ref":"KubeJS/Kubejs的使用.md","articles":[{"title":"1、KubeJS的指令","level":"1.2.1","depth":2,"path":"Kubejs的指令.md","ref":"Kubejs的指令.md","articles":[]},{"title":"2、KubeJS的事件列表","level":"1.2.2","depth":2,"path":"Kubejs的事件列表.md","ref":"Kubejs的事件列表.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-lunr","-search","code","back-to-top-button","expandable-chapters","-highlight","tbfed-pagefooter","-sharing","search-pro-fixed","auto-scroll-table","lightbox"],"styles":{"website":"styles/website.css"},"pluginsConfig":{"tbfed-pagefooter":{"modify_label":"文章修改时间：","modify_format":"YYYY-MM-DD HH:mm:ss"},"prism":{"css":["prismjs/themes/prism-coy.css"]},"auto-scroll-table":{},"code":{"copyButtons":true},"search-pro-fixed":{},"fontsettings":{"theme":"white","family":"sans","size":2},"lightbox":{"jquery":true,"sameUuid":false},"back-to-top-button":{},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","author":"Murate","lang":"zh-cn","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Kubejs 6使用教程(1.20.1+)","gitbook":"*","description":"Kubejs6的使用"},"file":{"path":"README.md","mtime":"2024-03-01T09:25:01.488Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2024-03-05T14:36:13.622Z"},"basePath":".","book":{"language":""}});
         });
     </script>
 </div>
@@ -229,6 +337,14 @@
     
         
         <script src="gitbook/gitbook-plugin-search-pro-fixed/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lightbox/js/lightbox.min.js"></script>
         
     
         
